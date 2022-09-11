@@ -1,0 +1,68 @@
+.container {
+  text-align: left;
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-areas:
+    "logo title"
+    "logo subtitle";
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.logo {
+  grid-area: logo;
+  max-width: 64px;
+}
+
+.title {
+  grid-area: title;
+  align-self: end;
+  margin: 0.2rem 1rem;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  grid-area: subtitle;
+  align-self: start;
+  margin: 0.2rem 1rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  .logo {
+    max-width: 96px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: inherit;
+  }
+
+  .container {
+    text-align: center;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "logo"
+      "title"
+      "subtitle";
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: 0.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    margin: 0.3rem;
+  }
+}

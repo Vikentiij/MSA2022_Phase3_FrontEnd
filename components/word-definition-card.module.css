@@ -1,0 +1,56 @@
+.container {
+  padding: 0 1.5rem;
+  margin-bottom: 0.5rem;
+  min-width: 275px;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 426px) {
+  .container {
+    padding: 1rem 2rem 0 ;
+  }
+}
+
+.cardContent {
+  border: 1px solid rgba(60, 60, 60, 0.5);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.word {
+  margin: 0;
+  font: 1.25rem sans-serif;
+  font-weight: bold;
+}
+
+.phonetic {
+  margin: 0.3rem 0;
+  font-family: serif;
+  font: 1.15rem serif;
+  color: rgb(215, 90, 40);
+}
+
+.partOfSpeech {
+  margin: 0.3rem 0 0.7rem;
+  font: 1.1rem sans-serif;
+  font-style: italic;
+  color: rgb(0, 100, 0);
+}
+
+.synonyms {
+  margin: 1rem 0 0.2rem;
+  font: 1.1rem sans-serif;
+  font-style: italic;
+  color: rgb(0, 10, 150);
+}
+
+.hr {
+  border: 0;
+  border-bottom: 1px solid rgba(60, 60, 60, 0.5);
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cardText {
+  margin: 0.5rem;
+}

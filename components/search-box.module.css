@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: flex-end;
+  font-family: sans-serif;
+}
+
+.button,
+.input {
+  display: inline-flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 426px) {
+  .container {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.input {
+  border-bottom: 1px solid rgb(150, 150, 150);
+  background-color: white;
+  /* border-radius: 0.25rem; */
+  font: 1.25rem / 1.5 sans-serif;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  transition: border-bottom 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.input:focus,
+.input:hover,
+.input:active,
+.input:focus-visible {
+  border: 0;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.input::placeholder {
+  opacity: 1; /* Firefox */
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.large-label {
+  display: inline-block;
+  font: bold 1.5rem sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.small-label {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 0.25rem;
+  margin-right: 1.5rem;
+  font: 1.25rem sans-serif;
+}
+
+.button {
+  font: 1.25rem sans-serif;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  color: rgb(59, 59, 59);
+  transition: background-color 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.button:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.button:active {
+  background-color: rgb(185, 185, 185);
+}
+
+.button:disabled {
+  background-color: rgb(242, 242, 242);
+  color: rgb(185, 185, 185);
+}
